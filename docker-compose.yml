@@ -1,5 +1,8 @@
 version: "3.9"
 
+volumes:
+  dev-db-data:
+
 services:
   app:
     build:
@@ -12,3 +15,19 @@ services:
       - ./app:/app
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+    depends_on:
+      - db
+
+  db:
+    volumes:
+      - dev-db-data:/var/lib/postgresql/data
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}

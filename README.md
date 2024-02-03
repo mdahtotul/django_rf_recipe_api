@@ -1,5 +1,7 @@
-## Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced\06 - Configure GitHub Actions
+## Main-Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced
 
-### Done: 003 Create GitHub Actions config [Follow Along]
+### Sub-Dir: 08 - Configure Database
 
-### Start: 004 Configure Docker Hub Credentials [Follow Along]
+#### Done: 007 Create core app [Follow Along]
+
+#### Start: 008 Write tests for wait_for_db command [Follow Along]
