@@ -2,6 +2,6 @@
 
 ### Sub-Dir: 08 - Configure Database
 
-#### Done: 007 Create core app [Follow Along]
+#### Done: 009 Add wait_for_db command [Follow Along]
 
-#### Start: 008 Write tests for wait_for_db command [Follow Along]
+#### Start: 010 Database migrations
