@@ -1,0 +1,9 @@
+TYPE_USER = "user"
+TYPE_ADMIN = "admin"
+TYPE_MODERATOR = "moderator"
+
+USER_ROLES = (
+    (TYPE_USER, TYPE_USER),
+    (TYPE_ADMIN, TYPE_ADMIN),
+    (TYPE_MODERATOR, TYPE_MODERATOR),
+)
