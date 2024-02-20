@@ -7,14 +7,15 @@ jobs:
   test-lint:
     name: Test and Lint
     runs-on: ubuntu-20.04
+    environment:
+      - DB_HOST: ${{ secrets.DB_HOST }}
+      - DB_NAME: ${{ secrets.DB_NAME }}
+      - DB_USER: ${{ secrets.DB_USER }}
+      - DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
     steps:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Checkout
