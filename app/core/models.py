@@ -39,7 +39,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     role = models.CharField(
-        max_length=10, choices=constants.USER_ROLES, default=constants.TYPE_USER
+        max_length=10, choices=constants.USER_ROLES, default=constants.TYPE_USER  # noqa
     )
 
     # assigning a custom manager to the user model

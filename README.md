@@ -14,6 +14,10 @@
 
 `docker-compose down`
 
+##### To check linting using docker & flake8:
+
+`docker-compose run --rm app sh -c "flake8"`
+
 ##### To check database is online using docker:
 
 `docker-compose run --rm app sh -c "python manage.py wait_for_db"`
