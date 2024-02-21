@@ -1,10 +1,10 @@
 ## Main-Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced
 
-### Sub-Dir: 09 - Create User Model
+### Sub-Dir: 10 - Setup Django Admin
 
-#### Done: 004 Implement user model [Follow Along]
+#### Done: 005 Support creating users [Follow Along]
 
-#### Start: 005 Normalize email addresses [Follow Along]
+#### Start:
 
 ##### To run server using docker:
 
@@ -14,6 +14,20 @@
 
 `docker-compose down`
 
+##### To check database is online using docker:
+
+`docker-compose run --rm app sh -c "python manage.py wait_for_db"`
+
 ##### To run tests using docker:
 
-`docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test"`
+`docker-compose run --rm app sh -c "python manage.py test"`
+
+##### To run migrations using docker:
+
+`docker-compose run --rm app sh -c "python manage.py makemigrations"`
+`docker-compose run --rm app sh -c "python manage.py migrate"`
+
+##### To remove previous migrations using docker:
+
+`docker volume ls`
+`docker volume rm <volume-name>`
