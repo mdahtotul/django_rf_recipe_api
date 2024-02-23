@@ -1,8 +1,8 @@
 ## Main-Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced
 
-### Sub-Dir: 10 - Setup Django Admin
+### Sub-Dir: 12 - Build user API
 
-#### Done: 005 Support creating users [Follow Along]
+#### Done:
 
 #### Start:
 
@@ -35,3 +35,7 @@
 
 `docker volume ls`
 `docker volume rm <volume-name>`
+
+##### To add new package using docker:
+
+add the package to requirements.txt and run `docker-compose build`
