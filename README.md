@@ -1,10 +1,10 @@
 ## Main-Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced
 
-### Sub-Dir: 12 - Build recipe API
+### Sub-Dir: 12 - Build tags API
 
-#### Done: 009 Implement recipe detail API [Follow Along]
+#### Done:
 
-#### Start: 010 Write tests for creating recipes [Follow Along]
+#### Start: 001 Tags API design
 
 ##### To run server using docker:
 
