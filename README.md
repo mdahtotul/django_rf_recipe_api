@@ -1,14 +1,18 @@
 ## Main-Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced
 
-### Sub-Dir: 12 - Build user API
+### Sub-Dir: 12 - Build recipe API
 
-#### Done: 007 Implement token API [Follow Along]
+#### Done: 001 Recipe API design.mp4
 
-#### Start: 008 Write tests for manage user API [Follow Along]
+#### Start:
 
 ##### To run server using docker:
 
 `docker-compose up`
+
+##### To build server using docker:
+
+`docker-compose up -d --build`
 
 ##### To remove all docker container
 
