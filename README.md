@@ -2,9 +2,9 @@
 
 ### Sub-Dir: 12 - Build recipe API
 
-#### Done: 001 Recipe API design.mp4
+#### Done:
 
-#### Start:
+#### Start: 006 Write tests for listing recipes [Follow Along]
 
 ##### To run server using docker:
 

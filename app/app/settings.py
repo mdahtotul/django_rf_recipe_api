@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "drf_spectacular",
 ]
 
-CUSTOM_APPS = ["core", "user"]
+CUSTOM_APPS = ["core", "user", "recipe"]
 
 INSTALLED_APPS += CUSTOM_APPS
 
