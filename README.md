@@ -2,9 +2,9 @@
 
 ### Sub-Dir: 12 - Build user API
 
-#### Done:
+#### Done: 007 Implement token API [Follow Along]
 
-#### Start:
+#### Start: 008 Write tests for manage user API [Follow Along]
 
 ##### To run server using docker:
 
