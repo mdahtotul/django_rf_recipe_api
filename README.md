@@ -2,9 +2,9 @@
 
 ### Sub-Dir: 12 - Build tags API
 
-#### Done:
+#### Done: 011 Implement create tag feature [Follow Along]
 
-#### Start: 001 Tags API design
+#### Start: 012 Write tests for updating recipe tags [Follow Along]
 
 ##### To run server using docker:
 
