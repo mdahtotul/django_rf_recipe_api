@@ -2,9 +2,9 @@
 
 ### Sub-Dir: 16 - Recipe image API
 
-#### Done:
+#### Done: 006 Write tests for uploading images [Follow Along]
 
-#### Start: 001 Recipe image API design
+#### Start: 007 Implement image API [Follow Along]
 
 ##### To run server using docker:
 
