@@ -1,11 +1,10 @@
-from os import name
-from django.db import models  # noqa
+from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
-)  # noqa
+)
 
 from . import constants
 
@@ -41,7 +40,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     role = models.CharField(
-        max_length=10, choices=constants.USER_ROLES, default=constants.TYPE_USER  # noqa
+        max_length=10,
+        choices=constants.USER_ROLES,
+        default=constants.TYPE_USER,
     )
 
     # assigning a custom manager to the user model
@@ -52,7 +53,10 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 class Recipe(models.Model):
     # Recipe object blue print
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)  # noqa
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     time_minutes = models.IntegerField(default=0)
@@ -80,7 +84,10 @@ class Tag(models.Model):
 class Ingredient(models.Model):
     # Ingredient object blue print
     name = models.CharField(max_length=255)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
 
     def __str__(self):
         return self.name
