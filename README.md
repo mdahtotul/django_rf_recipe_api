@@ -1,10 +1,10 @@
 ## Main-Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced
 
-### Sub-Dir: 15 - Build ingredients API
+### Sub-Dir: 16 - Recipe image API
 
 #### Done:
 
-#### Start: 001 Ingredients API Design
+#### Start: 001 Recipe image API design
 
 ##### To run server using docker:
 
