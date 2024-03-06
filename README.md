@@ -1,10 +1,10 @@
 ## Main-Dir: ⚡\Udemy-Build a Backend REST API with Python & Django - Advanced
 
-### Sub-Dir: 16 - Recipe image API
+### Sub-Dir: 17 - Implement filtering
 
-#### Done: 006 Write tests for uploading images [Follow Along]
+#### Done: 005 Implement tag and ingredient filtering [Follow Along]
 
-#### Start: 007 Implement image API [Follow Along]
+#### Start: 006 Review filtering in browser [Follow Along]
 
 ##### To run server using docker:
 
